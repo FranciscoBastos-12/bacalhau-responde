@@ -26,8 +26,8 @@ namespace Domain.Validators
               .WithMessage("O email informado não está válido.");
 
             RuleFor(x => x.Password)
-              .NotEmpty().WithMessage("A senha não pode ser vazio.")
-              .NotNull().WithMessage("A senha não pode ser nulo.")
+              .NotEmpty().WithMessage("A senha não pode ser vazia.")
+              .NotNull().WithMessage("A senha não pode ser nula.")
               .MinimumLength(3).WithMessage("A senha deve ter no mínimo 3 caracteres.")
               .MaximumLength(80).WithMessage("A senha não pode ter mais de 80 caracteres.");
         }

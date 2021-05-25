@@ -1,6 +1,5 @@
 ﻿using Core.Exceptions;
 using Domain.Validators;
-using System;
 using System.Collections.Generic;
 
 namespace Domain.Entities
@@ -17,6 +16,7 @@ namespace Domain.Entities
             Email = email;
             Password = password;
             _errors = new List<string>();
+            Validate();
         }
 
         public string Name { get; private set; }
